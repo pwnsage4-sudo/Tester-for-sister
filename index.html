@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Тестер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span id="question-counter">Сұрақ: 1 / 10</span>
+                <span id="score-counter">Ұпай: 0</span>
+            </div>
+            <div id="question-text" class="question-text">Сұрақ мәтіні осында болады?</div>
+            <div id="options-container" class="options">
+                <!-- Options will be injected here -->
+            </div>
+            <button id="next-btn" class="next-btn">Келесі сұрақ</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h1>Нәтиже</h1>
+            <div class="result-container">
+                <div class="score-circle">
+                    <span id="final-score">0%</span>
+                </div>
+                <div id="final-score-text" class="score-text">Сіз 10 сұрақтың 0 дұрыс жауап бердіңіз.</div>
+                <button id="restart-btn" class="restart-btn">Қайта бастау</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
